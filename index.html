@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es" data-ng-app="hexbrush">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+      <title>Hex Brush</title>
+      <meta name="description" content="">
+      <meta content="Hex Brush"   property="og:title"/>
+      <meta content="article" property="og:type"/>
+      <meta content="" property="og:url"/>
+      <meta content=""  property="og:image"/>
+      <meta content="" property="og:description"/>
+      <link rel="icon" type="image/png"   href="assets/img/favicon.png" />
+
+      <!-- Dependencias -->
+      <link rel="stylesheet" href="assets/css/angular-material.min.css">
+      <link rel="stylesheet" href="assets/css/materialdesignicons.min.css">
+
+      <!-- Google Fonts -->
+      <link href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+      <!-- CORE -->
+      <link rel="stylesheet" href="assets/css/style.min.css">
+
+      <base href="/hex-web/" />
+
+   </head>
+   <body>
+      <div data-ng-controller="Controller" data-ng-hide="loading" class="charge" data-ng-class="{chage_off: loading}">
+        <figure class="preload">
+         <img class="prelaod-img" src="assets/img/hexbrush-black-logo.png" />
+        </figure>
+      </div>
+      <!--Cabecera de la pagina-->
+      <span hide scroll-position="scroll"></span>
+      <header class="dc-header" set-header data-ng-class="{dc_pre_header: scroll > 100}"></header>
+      <!--cuerpo de la pagina-->
+      <section class="dc-section" data-ng-view data-ng-class="{dc_pre_section: scroll > 100}"></section>
+
+      <!-- Dependencias JS-->
+      <script src="assets/js/jquery.min.js"></script>
+
+      <!-- Dependencias AngularJS-->
+      <script src="assets/js/angular.min.js"></script>
+      <script src="assets/js/angular-route.min.js"></script>
+      <script src="assets/js/angular-animate.min.js"></script>
+      <script src="assets/js/angular-aria.min.js"></script>
+      <script src="assets/js/angular-material.min.js"></script>
+      <script src="assets/js/angular-local-storage.min.js"></script>
+
+      <!-- CORE -->
+      <script src="assets/js/templates.js"></script>
+      <script src="assets/js/main.min.js"></script>
+   </body>
+</html>

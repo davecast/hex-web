@@ -1,0 +1,7 @@
+angular.module("templates", []).run(["$templateCache", function($templateCache) {$templateCache.put("/header/view.html","<div class=dc-header-logo><a href=\"#/\"><figure><img src=assets/img/hexbrush-black-logo.png alt=\"hex brush\"></figure></a></div><div class=\"dc-header-menu dc-center-center\"><ul><li data-ng-repeat=\"m in menu\"><a href=#{{m.url}}>{{m.title}}</a></li></ul></div><div class=\"dc-header-menu-btn dc-center-center\" data-ng-click=toogle()><i class=\"mdi mdi-menu\"></i></div><div class=\"dc-header-menu-toogle dc-center-center\" data-ng-if=show><ul><li data-ng-repeat=\"m in menu\"><a href=#{{m.url}} data-ng-click=toogle()>{{m.title}}</a></li></ul></div>");
+$templateCache.put("/about/view.html","<article style=\"height: 900px;\">about</article>");
+$templateCache.put("/art/view.html","<article style=\"height: 900px;\">art</article>");
+$templateCache.put("/contact/view.html","<article style=\"height: 900px;\">contact</article>");
+$templateCache.put("/home/view.html","<article style=\"height: 900px;\">home</article>");
+$templateCache.put("/shop/view.html","<article style=\"height: 900px;\">shop</article>");
+$templateCache.put("/shows/view.html","<article style=\"height: 900px;\">shows</article>");}]);
